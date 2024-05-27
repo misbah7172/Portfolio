@@ -1,0 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/image01.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
+}
