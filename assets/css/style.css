@@ -555,3 +555,18 @@ button:focus {
 .social-icons a.facebook:hover {
     background-color: #4481F2;
 }
+
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  color: #333; 
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #007bff; 
+}

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misbah</title>
+    <title>My_Portfolio</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link id="favicon" rel="icon" type="image/png" href="images/icon01.png">
+    <link id="favicon" rel="icon" type="image/png" href="images/icon02.png">
     </head>
 
     <body>
@@ -27,19 +30,16 @@
                             <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
+                            <a href="about.html" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Portfolio</a>
+                            <a href="achievement.html" class="nav-link">Achievements</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Achievements</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Blog</a>
+                            <a href="blog.html" class="nav-link">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact</a>
@@ -60,8 +60,8 @@
                                 <ul class="social_home list-unstyled text-center pt-4">
                                     <li class="list-inline-item"><a href="https://www.facebook.com/misbah7172.misbah/"><i class="mdi mdi-facebook"></i></a></li>
                                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-linkedin"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-dribbble"></i></a></li>
-                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-google-plus"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-telegram"></i></a></li>
+                                    <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-instagram"></i></a></li>
                                     <li class="list-inline-item"><a href="javascript:void(0)"><i class="mdi mdi-twitter"></i></a></li>
                                 </ul>
                                 <div class="header_btn">
@@ -83,7 +83,7 @@
          <script src="assets/js/jquery.min.js"></script>
          <script src="assets/js/typed.js"></script>         
         <script>
-            $(".element").each(function() {
+            $(".element").each(function () {
                 var $this = $(this);
                 $this.typed({
                     strings: $this.attr('data-elements').split(','),
@@ -91,6 +91,18 @@
                     backDelay: 3000
                 });
             });
+
+            document.addEventListener('visibilitychange', function () {
+                if (document.visibilityState === "visible") {
+                    document.title = "My_Portfolio";
+                    document.getElementById("favicon").setAttribute("href", "images/icon01.png");
+                } else {
+                    document.title = "Hey!!!";
+                    document.getElementById("favicon").setAttribute("href", "images/icon02.png");
+                }
+            });
+
         </script>
-    </body>
-</html>
+        </body>
+        
+        </html>
