@@ -31,7 +31,7 @@ particlesJS("particles-js", {
             }
         },
         "size": {
-            "value": 4,  //size of perticle
+            "value": 4,
             "random": true,
             "anim": {
                 "enable": false,
@@ -72,6 +72,14 @@ particlesJS("particles-js", {
             "onclick": {
                 "enable": true,
                 "mode": "push"
+            },
+            "ontouchstart": {  // Adding touch start event
+                "enable": true,
+                "mode": "grab"
+            },
+            "ontouchmove": {  // Adding touch move event
+                "enable": true,
+                "mode": "grab"
             },
             "resize": true
         },
