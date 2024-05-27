@@ -50,8 +50,8 @@ This portfolio website is designed to highlight my expertise, projects, and acco
 
 ## Screenshots
 
-![Screenshot 1](/path/to/screenshot1.png)
-![Screenshot 2](/path/to/screenshot2.png)
+![Screenshot 1](/images/Screenshot_2024-05-28_00_29_41.png)
+![Screenshot 2](/images/Screenshot_2024-05-28_00_29_49.png)
 
 ## Contributing
 
